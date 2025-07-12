@@ -4,9 +4,10 @@ import { RiHome2Fill, RiShieldUserLine } from "react-icons/ri";
 import { Seo } from "@/ui/components/seo/seo";
 
 // Design System:
-import { Button } from "@/ui/design-system/buuton/button";
+import { Button } from "@/ui/design-system/button/button";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { Spinner } from "@/ui/design-system/spinner/spinner";
+import { Logo } from "@/ui/design-system/logo/logo";
 
 export default function Home() {
   return (
@@ -169,6 +170,18 @@ export default function Home() {
               <Spinner size="small" variant="primary" />
               <Spinner size="medium" variant="primary" />
               <Spinner size="large" variant="primary" />
+            </div>
+          </div>
+          {/* Logo */}
+          <div className="qpace-y-2">
+            <Typography variant="caption2" weight="medium">
+              Logo
+            </Typography>
+            <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
+              <Logo size="very-small" />
+              <Logo size="small" />
+              <Logo />
+              <Logo size="large" />
             </div>
           </div>
         </div>
