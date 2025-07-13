@@ -9,13 +9,17 @@ import { Typography } from "@/ui/design-system/typography/typography";
 import { Spinner } from "@/ui/design-system/spinner/spinner";
 import { Logo } from "@/ui/design-system/logo/logo";
 import { Avatar } from "@/ui/design-system/logo/avatar";
+import { Container } from "@/ui/components/container/container";
+import { Navigation } from "@/ui/components/navigation/navigation";
 
 export default function Home() {
   return (
     <>
       <Seo title="San Coders" description="Description..." />
 
-      <div className="max-w-6xl mx-auto space-y-5 py-10">
+      <Navigation />
+
+      <Container className=" py-10 space-y-10">
         {/* Typography */}
         <div className="space-y-2">
           <Typography variant="caption2" weight="medium">
@@ -474,7 +478,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }
