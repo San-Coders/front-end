@@ -1,6 +1,6 @@
 import { AppLinks, FooterLinks } from "@/types/app-links";
 
-export const footerApplicationLinks: AppLinks[] = [
+const footerApplicationLinks: AppLinks[] = [
   {
     label: "Accueil",
     baseUrl: "/",
@@ -22,8 +22,7 @@ export const footerApplicationLinks: AppLinks[] = [
     type: "external",
   },
 ];
-
-export const footerUserLinks: AppLinks[] = [
+const footerUserLinks: AppLinks[] = [
   {
     label: "Mon espace",
     baseUrl: "/profil",
@@ -45,8 +44,7 @@ export const footerUserLinks: AppLinks[] = [
     type: "internal",
   },
 ];
-
-export const footerInformationLinks: AppLinks[] = [
+const footerInformationLinks: AppLinks[] = [
   {
     label: "CGU",
     baseUrl: "/cgu",
@@ -68,8 +66,7 @@ export const footerInformationLinks: AppLinks[] = [
     type: "internal",
   },
 ];
-
-export const footerSocialMediaLinks: AppLinks[] = [
+const footerSocialMediaLinks: AppLinks[] = [
   {
     label: "Github",
     baseUrl: "https://github.sloudy.com",
