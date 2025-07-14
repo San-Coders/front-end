@@ -1,17 +1,12 @@
 import { Container } from "@/ui/components/container/container";
+import { footerLinks } from "@/ui/components/navigation/app-links";
 import { Typography } from "@/ui/design-system/typography/typography";
-import {
-  footerLinks,
-  footerApplicationLinks,
-  footerUserLinks,
-  footerInformationLinks,
-  footerSocialMediaLinks,
-} from "@/ui/components/navigation/app-links";
 import Image from "next/image";
+import { ActiveLink } from "./active-link";
 
 import { v4 as uuidv4 } from "uuid";
-import { ActiveLink } from "./active-link";
-import { AppLinks, FooterLinks } from "@/types/app-links";
+
+import { FooterLinks } from "@/types/app-links";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
