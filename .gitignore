@@ -44,3 +44,4 @@ next-env.d.ts
 *.cache
 .firebase/hosting.b3V0.cache
 !package-lock.json
+!text.txt
