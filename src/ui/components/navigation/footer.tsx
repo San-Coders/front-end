@@ -8,6 +8,7 @@ import { v4 as uuidv4 } from "uuid";
 
 import { FooterLinks } from "@/types/app-links";
 import { LinkTypes } from "@/lib/link-type";
+import { SocialNetworksButton } from "./social-networks-button";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -51,8 +52,9 @@ export const Footer = () => {
               Sanesu
             </a>
           </Typography>
-
-          <div className=""></div>
+          <div className="">
+            <SocialNetworksButton />
+          </div>
         </div>
       </Container>
     </div>

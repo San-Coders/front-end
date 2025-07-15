@@ -1,4 +1,5 @@
 import { AppLinks, FooterLinks } from "@/types/app-links";
+import { RiGithubFill, RiLinkedinFill, RiSlackFill } from "react-icons/ri";
 
 const footerApplicationLinks: AppLinks[] = [
   {
@@ -66,21 +67,25 @@ const footerInformationLinks: AppLinks[] = [
     type: "internal",
   },
 ];
-const footerSocialMediaLinks: AppLinks[] = [
+
+export const footerSocialMediaLinks: AppLinks[] = [
   {
     label: "Github",
     baseUrl: "https://github.sloudy.com",
     type: "external",
+    icon: RiGithubFill,
   },
   {
     label: "Linkdin",
     baseUrl: "https://linkdin.sloudy.com",
     type: "external",
+    icon: RiLinkedinFill,
   },
   {
     label: "Slack",
     baseUrl: "https://web.sloudy.com/slack",
     type: "external",
+    icon: RiSlackFill,
   },
 ];
 
