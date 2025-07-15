@@ -5,7 +5,7 @@ export interface AppLinks {
   label: string;
   baseUrl: string;
   type: LinkType;
-  icon: IconType;
+  icon?: IconType;
 }
 
 export interface FooterLinks {

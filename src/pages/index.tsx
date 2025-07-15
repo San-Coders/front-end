@@ -1,18 +1,15 @@
 // Component:
 import { Seo } from "@/ui/components/seo/seo";
-
-// Design System
-import { Navigation } from "@/ui/components/navigation/navigation";
-import { Footer } from "@/ui/components/navigation/footer";
+import { Layout } from "@/ui/components/layout/layout";
+import { LandingPageContainer } from "@/ui/modules/landing-page/landing-page.container";
 
 export default function Home() {
   return (
     <>
       <Seo title="San Coders" description="Description..." />
-
-      <Navigation />
-
-      <Footer />
+      <Layout>
+        <LandingPageContainer />
+      </Layout>
     </>
   );
 }
