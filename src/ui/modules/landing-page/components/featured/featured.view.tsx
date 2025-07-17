@@ -44,43 +44,41 @@ const featuresData: FeatureListInterface[] = [
 
 export const FeaturedView = () => {
 	const featuredList = featuresData.map((feature) => (
-		<>
-			<div
-				key={uuidv4()}
-				className="flex flex-col items-center justify-center bg-white rounded p-7"
-			>
-				<div className="relative w-[130px] h-[130px] rounded-full mb-6 p-10 overflow-hidden">
-					<Image
-						fill
-						src={feature.imagePath}
-						alt={feature.imageAlt}
-						className="object-scale-down blur-2xl"
-					></Image>
-					<Image
-						fill
-						src={feature.imagePath}
-						alt={feature.imageAlt}
-						className="object-scale-down"
-					></Image>
-				</div>
-				<Typography
-					variant="lead"
-					component="h3"
-					weight="medium"
-					className="text-center mb-2.5"
-				>
-					{feature.title}
-				</Typography>
-				<Typography
-					variant="body-base"
-					component="p"
-					theme="gray"
-					className="text-center"
-				>
-					{feature.description}
-				</Typography>
+		<div
+			key={uuidv4()}
+			className="flex flex-col items-center justify-center bg-white rounded p-7"
+		>
+			<div className="relative w-[130px] h-[130px] rounded-full mb-6 p-10 overflow-hidden">
+				<Image
+					fill
+					src={feature.imagePath}
+					alt={feature.imageAlt}
+					className="object-scale-down blur-2xl"
+				></Image>
+				<Image
+					fill
+					src={feature.imagePath}
+					alt={feature.imageAlt}
+					className="object-scale-down"
+				></Image>
 			</div>
-		</>
+			<Typography
+				variant="lead"
+				component="h3"
+				weight="medium"
+				className="text-center mb-2.5"
+			>
+				{feature.title}
+			</Typography>
+			<Typography
+				variant="body-base"
+				component="p"
+				theme="gray"
+				className="text-center"
+			>
+				{feature.description}
+			</Typography>
+		</div>
 	));
 
 	return (

@@ -4,12 +4,12 @@ import { Layout } from "@/ui/components/layout/layout";
 import { LandingPageContainer } from "@/ui/modules/landing-page/landing-page.container";
 
 export default function Home() {
-  return (
-    <>
-      <Seo title="San Coders" description="Description..." />
-      <Layout>
-        <LandingPageContainer />
-      </Layout>
-    </>
-  );
+	return (
+		<>
+			<Seo title="San Coders" description="Description..." />
+			<Layout isBreadCrumbs={false}>
+				<LandingPageContainer />
+			</Layout>
+		</>
+	);
 }
