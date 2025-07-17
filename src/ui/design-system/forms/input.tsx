@@ -30,6 +30,7 @@ export const Input = ({
 				type={type}
 				placeholder={placeholder}
 				className={clsx(
+					isLoading && "cursor-not-allowed",
 					errors[id]
 						? "focus:ring-alert-danger placeholder-alert-danger text-alert-danger"
 						: "focus:ring-primary placeholder-gray-600",

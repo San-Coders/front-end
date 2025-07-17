@@ -19,7 +19,7 @@ export const RegisterForm = ({ form }: Props) => {
 					isLoading={isLoading}
 					placeholder="johndoe@gmail.com"
 					type="email"
-					register={register} // UseFormRegister<FormValues> - UseFormRegister<FormValues>
+					register={register}
 					errors={errors}
 					errorMsg="Merci de spécifié un email valide"
 					id={"email"}
@@ -40,9 +40,10 @@ export const RegisterForm = ({ form }: Props) => {
 					placeholder="Comment nous as-tu connus ?"
 					register={register}
 					errors={errors}
-					errorMsg="Merci de spécifié un email valide"
+					errorMsg="Merci de renseigner ce champ"
 					id={"how_did_hear"}
 				/>
+
 				<Button isLoading={isLoading} type="submit" fullWith>
 					S'inscrire
 				</Button>

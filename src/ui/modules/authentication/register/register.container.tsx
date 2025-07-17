@@ -8,7 +8,6 @@ export const RegisterContainer = () => {
 
 	const {
 		handleSubmit,
-		control,
 		formState: { errors },
 		register,
 		setError,
@@ -18,6 +17,7 @@ export const RegisterContainer = () => {
 	const onSubmit: SubmitHandler<RegisterFormFieldsType> = async (
 		formData
 	) => {
+		setIsLoading(true);
 		console.log("formData", formData);
 	};
 
@@ -26,7 +26,6 @@ export const RegisterContainer = () => {
 			<RegisterView
 				form={{
 					errors,
-					control,
 					register,
 					handleSubmit,
 					onSubmit,
