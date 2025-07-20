@@ -1,7 +1,6 @@
 import { auth } from "@/config/firebase-config";
 import { FirebaseError } from "firebase/app";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { todo } from "node:test";
 
 export const CreateUser = async (email: string, password: string) => {
 	try {
