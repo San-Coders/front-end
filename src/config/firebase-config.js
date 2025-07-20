@@ -1,22 +1,8 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import {
-	apiKey,
-	authDomain,
-	projectId,
-	storageBucket,
-	messagingSenderId,
-	appId,
-} from "@/config/config";
+import { useConfig } from "@/config/config";
 
-const firebaseConfig = {
-	apiKey,
-	authDomain,
-	projectId,
-	storageBucket,
-	messagingSenderId,
-	appId,
-};
+const firebaseConfig = useConfig();
 
 // Initialize Firebase
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
