@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
 	reactStrictMode: false,
 	images: { unoptimized: true },
 	output: "export",
-	distDir: "out",
+	//distDir: "out",
 	eslint: {
 		ignoreDuringBuilds: true,
 	},

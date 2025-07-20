@@ -25,7 +25,7 @@ export const ForgetPasswordView = ({ form }: Props) => {
 				</div>
 			</div>
 
-			<div className="flex items-center py-96">
+			<div className="flex items-center py-16">
 				<Box padding_y="py-5">
 					<div className="flex items-center justify-between">
 						<Typography variant="h5" component="h1">

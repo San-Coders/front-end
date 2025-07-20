@@ -25,7 +25,7 @@ export const LoginView = ({ form }: Props) => {
 				</div>
 			</div>
 
-			<div className="flex items-center py-96">
+			<div className="flex items-center py-16">
 				<Box padding_y="py-5">
 					<div className="flex items-center justify-between">
 						<Typography variant="h5" component="h1">
@@ -51,6 +51,14 @@ export const LoginView = ({ form }: Props) => {
 						</div>
 					</div>
 					<LoginForm form={form} />
+					<Typography variant="caption4" theme="primary">
+						<Link
+							href="/connexion/mot-de-passe-perdu"
+							className="flex justify-center"
+						>
+							Mot de passe perdu ?
+						</Link>
+					</Typography>
 				</Box>
 			</div>
 		</Container>

@@ -45,3 +45,4 @@ next-env.d.ts
 .firebase/hosting.b3V0.cache
 !package-lock.json
 !text.txt
+src/config/firebase-config.js
